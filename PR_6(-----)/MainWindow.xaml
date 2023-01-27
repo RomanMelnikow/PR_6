@@ -1,0 +1,30 @@
+﻿<Window x:Class="PR_6_______.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR_6_______"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="761" Width="1264">
+    <Grid Margin="0,115,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="424*"/>
+            <ColumnDefinition Width="209*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="image" Source="/iIC6Cb6nFcM.jpg" Margin="-2,0,185,0" Grid.ColumnSpan="2" IsEnabled="False"/>
+        <Button Content="Изменить картинку" HorizontalAlignment="Left" Height="268" Margin="429,315,0,0" VerticalAlignment="Top" Width="505" Click="Button_Click" Grid.Column="1" FontSize="36" Grid.ColumnSpan="2"/>
+        <Label x:Name="label1" Content="Добро Пожаловать!" HorizontalAlignment="Left" Margin="88,-107,0,0" VerticalAlignment="Top" Height="100" Width="1379" FontSize="72" Grid.ColumnSpan="3" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.158"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.497"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="Изменить Запись" HorizontalAlignment="Left" Height="242" Margin="424,10,0,0" VerticalAlignment="Top" Width="510" Click="Button_Click1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="36"/>
+
+    </Grid>
+</Window>
